@@ -10,15 +10,111 @@
   <body>
     <div id="root">
       <header>
-        <div class="w1190">header</div>
+        <div class="w1190">
+          <nav id="top_nav">
+            <ul class="row_link_list">
+              <li><a href="#">asdf</a></li>
+              <li><a href="#">qwer</a></li>
+              <li><a href="#">vd</a></li>
+              <li><a href="#">qwer</a></li>
+              <li><a href="#">trwef</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <header>
+        <div class="w1190">
+          <nav id="top_nav_right">
+            <ul class="row_link_list">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
-        <div class="w1190">main</div>
+        <section class="w1190 main_container">
+          <h2>one-column</h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" tabindex="-1">Slide 1</div>
+              <div class="swiper-slide" tabindex="-1">Slide 2</div>
+              <div class="swiper-slide" tabindex="-1">Slide 3</div>
+              ...
+            </div>
+            <div class="slide_controller">
+              <div class="slide_pagination"></div>
+              <div class="slide_btn_prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="slide_btn_next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+              <div class="wrap-autoplay-control">
+                <button aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w1190 main_container">
+          <h2>two-column</h2>
+          <div class="side_contents_container">
+            <div class="side">
+              <ul class="list-group sticky-top">
+                <li class="list-group-item active" aria-current="true">An active item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+            <div class="contents">main-contents</div>
+          </div>
+        </section>
+        <section class="w1190 main_container">
+          <h2>three-column</h2>
+          <div class="side_contents_container">
+            <div class="side">side menu</div>
+            <div class="contents third_contents">
+              <div>main-contents</div>
+              <div class="third_side">
+                <div class="alert alert-danger sticky-top" role="alert">A simple danger alert—check it out!</div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="w1190">footer</div>
       </footer>
     </div>
   </body>
-  <script src="./dist/main.js"></script>
+  <script type="module" src="./dist/main.js"></script>
 </html>
